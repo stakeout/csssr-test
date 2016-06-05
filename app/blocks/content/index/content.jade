@@ -1,0 +1,78 @@
+mixin content()
+	+b.MAIN.page-content&attributes({'data-content': 'index'})
+		+e.inner
+			+b.UL.about
+				+e.LI.item
+					+e.SPAN.data Полное ФИО
+					+e.SPAN.data-info Новаш Вадим Сергеевич
+				+e.LI.item
+					+e.SPAN.data Год рождения
+					+e.SPAN.data-info 1981
+				+e.LI.item
+					+e.SPAN.data Место жительства
+					+e.SPAN.data-info г. Вилейка, Белоруссия
+				+e.LI.item
+					+e.SPAN.data Скайп
+					+e.SPAN.data-info vadim.novash
+				+e.LI.item
+					+e.SPAN.data Почта
+					+e.SPAN.data-info novash@tut.by
+			+b.code-school Выпускник
+				+e.A.academy(href='http://www.htmlacademy.ru' target='_blank') htmlacademy.ru
+				+e.INPUT(type='radio' name='answer' id="ok" checked)
+				+e.LABEL.ok(for='ok') Да
+				+e.INPUT(type='radio' name='answer' id='no')
+				+e.LABEL.no(for='no') Нет
+			+b.SECTION.skills
+				+e.H2.title Практические навыки
+				+e.P.subtitle Отметьте только те технологии и типы задач, с которыми вы хорошо
+					|знакомы. Отсутствие опыта отнюдь не означает, что у вас меньше шансов стать
+					|нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми
+					|гарантировано будете справляться.
+				+b.skill-list
+					+e.LABEL.item(for='bem') Методология БЭМ
+						input(type='checkbox' id='bem' name='bem')
+					+e.LABEL.item(for='jade') Jade
+						input(type='checkbox' id='jade' name='jade')
+					+e.LABEL.item(for='letter') Верстка рассылок
+						input(type='checkbox' id='letter' name='letter')
+					+e.LABEL.item(for='jq') jQuery
+						input(type='checkbox' id='jq' name='jq')
+					+e.LABEL.item(for='stylus') Stylus
+						input(type='checkbox' id='stylus' name='stylus')
+					+e.LABEL.item(for='adaptive') Адаптивная верстка
+						input(type='checkbox' id='adaptive' name='adaptive')
+					+e.LABEL.item(for='gulp') Использую GULP
+						input(type='checkbox' id='gulp' name='gulp')
+					+e.LABEL.item(for='angular') Знаю (изучаю) Angular
+						input(type='checkbox' id='angular' name='angular')
+					+e.LABEL.item(for='dropbox') Использую Dropbox
+						input(type='checkbox' id='dropbox' name='dropbox')
+					+e.LABEL.item(for='haml') HAML
+						input(type='checkbox' id='haml' name='haml')
+					+e.LABEL.item(for='android') Верстка под Android
+						input(type='checkbox' id='android' name='android')
+					+e.LABEL.item(for='gmail') Использую Gmail
+						input(type='checkbox' id='gmail' name='gmail')
+					+e.LABEL.item(for='sass') SASS
+						input(type='checkbox' id='sass' name='sass')
+					+e.LABEL.item(for='ios') Верстка под iOS
+						input(type='checkbox' id='ios' name='ios')
+					+e.LABEL.item(for='git') Использую GitHub
+						input(type='checkbox' id='git' name='git')
+					+e.LABEL.item(for='less') LESS
+						input(type='checkbox' id='less' name='less')
+					+e.LABEL.item(for='winphone') Верстка под Windows Phone
+						input(type='checkbox' id='winphone' name='winphone')
+					+e.LABEL.item(for='coffee') CoffeeScript
+						input(type='checkbox' id='coffee' name='coffee')
+			+b.SECTION.js-level
+				+e.H2.title Уровень владения JavaScript
+				+e.range
+				+e.UL.list
+					+e.LI.item Не владею
+					+e.LI.item Использую готовые решения
+					+e.LI.item Использую готовые решения и умею их переделывать
+					+e.LI.item Пишу сложные скрипты
+
+
