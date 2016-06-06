@@ -96,11 +96,20 @@ input[type=radio]:checked + label::after
 
 .skill-list
 	display: flex
-	flex-wrap: wrap
-	align-items: flex-start
-	align-content: flex-start
+	fieldset
+		display: flex
+		flex-direction: column
+		border: none
+		&:nth-child(2)
+			margin-right: 19px
 .skill-list__input
 	display: none
+.skill-list__input:checked + label:after
+	position: absolute
+	left: 3px
+	top: -3px
+	content: ''
+	sprite($checkbox_checked)
 
 .skill-list__item
 	position: relative
