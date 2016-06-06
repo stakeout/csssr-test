@@ -95,26 +95,25 @@ input[type=radio]:checked + label::after
 		font-size: 40px
 
 .skill-list
-	display: flex
-	flex-wrap: wrap
-	align-items: flex-start
-	align-content: flex-start
-.skill-list__input
-	display: none
-
-.skill-list__item
-	position: relative
-	width: 260px
-	margin-bottom: 10px
-	padding-left: 25px
-	color: #000
-	font-family: body-font
-	font-size: 21px
-	font-weight: 700
-	line-height: 25px
-	&:before
-		position: absolute
-		content: ''
-		top: 5px
-		left: 0
-		sprite($checkbox)
+	font-size:0
+	&__item
+		display: inline-block
+		vertical-align: top
+		width: 260px
+	input
+		display: none
+	label
+		position: relative
+		margin-bottom: 10px
+		padding-left: 25px
+		color: #000
+		font-family: body-font
+		font-size: 21px
+		font-weight: 700
+		line-height: 25px
+		&:before
+			position: absolute
+			content: ''
+			top: 5px
+			left: 0
+			sprite($checkbox)
