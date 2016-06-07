@@ -13,10 +13,10 @@ mixin content()
 					+e.SPAN.data-info г. Вилейка, Белоруссия
 				+e.LI.item
 					+e.SPAN.data Скайп
-					+e.SPAN.data-info vadim.novash
+					+e.A(href='skype:vadim.novash?chat').data-info vadim.novash
 				+e.LI.item
 					+e.SPAN.data Почта
-					+e.SPAN.data-info novash@tut.by
+					+e.A(href='mailto:novash@tut.by').data-info novash@tut.by
 			+b.code-school Выпускник
 				+e.A.academy(href='http://www.htmlacademy.ru' target='_blank') htmlacademy.ru
 				+e.INPUT(type='radio' name='answer' id="ok" checked)
@@ -71,8 +71,7 @@ mixin content()
 						+e.LABEL.item(for='git') Использую GitHub
 			+b.SECTION.js-level
 				+e.H2.title Уровень владения JavaScript
-				+e.range
-					SPAN.arrow
+				+e.range#rangeSlider
 				+e.UL.list
 					+e.LI.item Не владею
 					+e.LI.item Использую готовые решения

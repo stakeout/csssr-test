@@ -97,6 +97,7 @@
     "jquery": "^2.1.4",
     "merge-stream": "^1.0.0",
     "node-notifier": "^4.3.1",
+    "nouislider": "^8.5.1",
     "npm-install-webpack-plugin": "^2.0.2",
     "npm-run-all": "^1.5.1",
     "require-dir": "^0.3.0",
