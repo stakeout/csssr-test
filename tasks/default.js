@@ -13,6 +13,7 @@ gulp.task('default', () => (
 	runSequence(
 		[
 			'styles:dependencies',
+			'images',
 			'templates'
 		],
 		'server',
@@ -25,6 +26,7 @@ gulp.task('build', () => (
 		'styles:dependencies',
 		'templates',
 		'scripts',
+		'images',
 		'copy'
 	)
 ));

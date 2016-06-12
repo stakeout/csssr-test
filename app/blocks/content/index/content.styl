@@ -98,7 +98,7 @@ input[type=radio]:checked + label::after
 		content: '*'
 		font-size: 40px
 
-.skill-list
+.skills-list
 	display: flex
 	fieldset
 		display: flex
@@ -106,16 +106,16 @@ input[type=radio]:checked + label::after
 		border: none
 		&:nth-child(2)
 			margin-right: 19px
-.skill-list__input
+.skills-list__input
 	display: none
-.skill-list__input:checked + label:after
+.skills-list__input:checked + label:after
 	position: absolute
 	left: 3px
 	top: -3px
 	content: ''
 	sprite($checkbox_checked)
 
-.skill-list__item
+.skills-list__item
 	position: relative
 	width: 260px
 	margin-bottom: 10px
@@ -125,6 +125,7 @@ input[type=radio]:checked + label::after
 	font-size: 21px
 	font-weight: 700
 	line-height: 25px
+	cursor: pointer
 	&:before
 		position: absolute
 		content: ''

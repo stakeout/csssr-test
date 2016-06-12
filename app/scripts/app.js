@@ -7,7 +7,7 @@ $(() => {
 });
 const slider = document.getElementById('rangeSlider');
 noUiSlider.create(slider, {
-	start: [35],
+	start: [40],
 	connect: 'lower',
 	range: {
 		min: 0,
