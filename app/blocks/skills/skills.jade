@@ -1,0 +1,47 @@
+mixin skills()
+	+b.SECTION.skills
+		+e.H2.title Практические навыки
+		+e.P.subtitle Отметьте только те технологии и типы задач, с которыми вы хорошо
+			| знакомы. Отсутствие опыта отнюдь не означает, что у вас меньше шансов стать
+			| нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми
+			| гарантировано будете справляться.
+		+e.FORM.list(action='#' method='post')
+			FIELDSET
+				+e.INPUT.input-type-checkbox(type='checkbox' id='bem' name='bem' checked)
+				+e.LABEL.item(for='bem') Методология БЭМ
+				+e.INPUT.input-type-checkbox(type='checkbox' id='jq' name='jq')
+				+e.LABEL.item(for='jq') jQuery
+				+e.INPUT.input-type-checkbox(type='checkbox' id='gulp' name='gulp' checked)
+				+e.LABEL.item(for='gulp') Использую GULP
+				+e.INPUT.input-type-checkbox(type='checkbox' id='haml' name='haml')
+				+e.LABEL.item(for='haml') HAML
+				+e.INPUT.input-type-checkbox(type='checkbox' id='sass' name='sass' checked)
+				+e.LABEL.item(for='sass') SASS
+				+e.INPUT.input-type-checkbox(type='checkbox' id='less' name='less' checked)
+				+e.LABEL.item(for='less') LESS
+				+e.INPUT.input-type-checkbox(type='checkbox' id='coffee' name='coffee')
+				+e.LABEL.item(for='coffee') CoffeeScript
+			FIELDSET
+				+e.INPUT.input-type-checkbox(type='checkbox' id='jade' name='jade' checked)
+				+e.LABEL.item(for='jade') Jade
+				+e.INPUT.input-type-checkbox(type='checkbox' id='stylus' name='stylus' checked)
+				+e.LABEL.item(for='stylus') Stylus
+				+e.INPUT.input-type-checkbox(type='checkbox' id='angular' name='angular')
+				+e.LABEL.item(for='angular') Знаю (изучаю) Angular
+				+e.INPUT.input-type-checkbox(type='checkbox' id='android' name='android')
+				+e.LABEL.item(for='android') Верстка под Android
+				+e.INPUT.input-type-checkbox(type='checkbox' id='ios' name='ios')
+				+e.LABEL.item(for='ios') Верстка под iOS
+				+e.INPUT.input-type-checkbox(type='checkbox' id='winphone' name='winphone')
+				+e.LABEL.item(for='winphone') Верстка под Windows Phone
+			FIELDSET
+				+e.INPUT.input-type-checkbox(type='checkbox' id='letter' name='letter')
+				+e.LABEL.item(for='letter') Верстка рассылок
+				+e.INPUT.input-type-checkbox(type='checkbox' id='adaptive' name='adaptive' checked)
+				+e.LABEL.item(for='adaptive') Адаптивная верстка
+				+e.INPUT.input-type-checkbox(type='checkbox' id='dropbox' name='dropbox' checked)
+				+e.LABEL.item(for='dropbox') Использую Dropbox
+				+e.INPUT.input-type-checkbox(type='checkbox' id='gmail' name='gmail' checked)
+				+e.LABEL.item(for='gmail') Использую Gmail
+				+e.INPUT.input-type-checkbox(type='checkbox' id='git' name='git' checked)
+				+e.LABEL.item(for='git') Использую GitHub

@@ -1,0 +1,60 @@
+.skills
+	margin-bottom: 57px
+.skills__title
+	color: content-color
+	font-family: body-font
+	font-size: 22px
+	font-weight: 700
+	line-height: 50px
+
+.skills__subtitle
+	position: relative
+	margin-top: -3px
+	margin-bottom: 20px
+	padding-left: 18px
+	color: #3d3d3d
+	font-family: body-font
+	font-size: 14px
+	font-weight: 400
+	line-height: 22px
+	&:before
+		position: absolute
+		left: 0
+		top: 10px
+		content: '*'
+		font-size: 40px
+
+.skills__list
+	display: flex
+	fieldset
+		display: flex
+		flex-direction: column
+		border: none
+		&:nth-child(2)
+			margin-right: 19px
+.skills__input-type-checkbox
+	display: none
+.skills__input-type-checkbox:checked + label:after
+	position: absolute
+	left: 3px
+	top: -3px
+	content: ''
+	sprite($checkbox_checked)
+
+.skills__item
+	position: relative
+	width: 260px
+	margin-bottom: 10px
+	padding-left: 25px
+	color: #000
+	font-family: body-font
+	font-size: 21px
+	font-weight: 700
+	line-height: 25px
+	cursor: pointer
+	&:before
+		position: absolute
+		content: ''
+		top: 5px
+		left: 0
+		sprite($checkbox)

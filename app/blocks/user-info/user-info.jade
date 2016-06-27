@@ -1,0 +1,22 @@
+include /blocks/code-school/code-school
+mixin user-info()
+	+b.user-info
+		+e.UL.list
+			+e.LI.item
+				+e.SPAN.data Полное ФИО
+				+e.SPAN.data-info Новаш Вадим Сергеевич
+			+e.LI.item
+				+e.SPAN.data Год рождения
+				+e.SPAN.data-info 1981
+			+e.LI.item
+				+e.SPAN.data Место жительства
+				+e.SPAN.data-info г. Вилейка, Белоруссия
+			+e.LI.item
+				+e.SPAN.data Скайп
+				+e.A(href='skype:vadim.novash?chat').data-info vadim.novash
+			+e.LI.item
+				+e.SPAN.data Почта
+				+e.A(href='mailto:novash@tut.by').data-info novash@tut.by
+			+e.LI.item
+				+code-school
+

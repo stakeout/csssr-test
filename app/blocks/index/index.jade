@@ -1,12 +1,5 @@
 include /blocks/user-info/user-info
-include /blocks/skills/skills
-include /blocks/js-level/js-level
-mixin content()
+mixin index-content()
 	+b.MAIN.page-content&attributes({'data-content': 'index'})
 		+e.inner
 			+user-info
-			+skills
-			+js-level
-
-
-
