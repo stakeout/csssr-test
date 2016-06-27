@@ -24,3 +24,10 @@
 	z-index: 1
 	sprite:($down_arrow)
 	cursor: pointer
+	&:focus
+		animation: arrow-scale .5s infinite ease-in
+@keyframes arrow-scale {
+	from {transform: scale(1)}
+	50% {transform: scale(1.7)}
+	to {transform: scale(1)}
+}
